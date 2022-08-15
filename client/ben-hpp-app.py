@@ -42,6 +42,17 @@ locations_name=list(columns_json['columns'])[4:]
 
 # building the ui using streamlit package
 
+# background
+st.markdown(f"""
+         <style>
+         .stApp {{
+             background-image: url("https://images.unsplash.com/photo-1525015471056-0f7e78652361?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHw%3D&w=1000&q=80");
+             background-attachment: fixed;
+             background-size: cover
+         }}
+         </style>
+         """, unsafe_allow_html=True)
+
 # title and subtitle
 st.write('''
 ## Bengaluru Real-Estate Price Prediction App
